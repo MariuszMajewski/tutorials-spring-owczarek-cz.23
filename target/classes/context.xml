@@ -8,5 +8,12 @@
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.1.xsd">
 
 	<context:component-scan base-package="pl.mrmario.tutorials.spring.owczarek.cz23"/>
-
+	
+	<bean class="pl.mrmario.tutorials.spring.owczarek.cz23.implementations.WithDateLogger">
+		<qualifier value="counterLoggerXmlQualifier"></qualifier>
+	</bean>
+	
+	<bean class="pl.mrmario.tutorials.spring.owczarek.cz23.implementations.CounterLogger">
+		<qualifier value="withDateXmlQualifier"></qualifier>
+	</bean>
 </beans> 

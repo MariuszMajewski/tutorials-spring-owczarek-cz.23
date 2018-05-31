@@ -11,7 +11,7 @@ import pl.mrmario.tutorials.spring.owczarek.cz23.domain.User;
 @Service("usersRepositoryImpl")
 public class UsersRepositoryImpl implements UsersRepository {
 	@Autowired
-	@Qualifier("WithDateLoggerQualifier")
+	@Qualifier("counterLoggerXmlQualifier")
 	private Logger logger;
 
 	public User createUser(String name) {
